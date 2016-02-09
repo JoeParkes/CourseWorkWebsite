@@ -1,7 +1,33 @@
-.NormalText {
-    font-family: Ubuntu;
+body {
+    background-color: #37474F;
+    font-family: 'Oxygen', sans-serif;
+    }
+
+p {
     color: white;
     font-size: 100%;
+    margin-left: 40px;
+    padding-left: 10px;
+    }
     
+h1 {
+    color: white;
+    font-size: 50pt;
+    margin-left: 40px;
+    padding-left: 10px;
+    
+    }
+
+.copyright-notice {
+    font-size: 0.8em;
+    color: white;
 }
-    
+
+.indent {
+    font-size: 0.8em;
+    color: white;
+    font-style: normal;
+    border-left: 2px solid white;
+    margin-left: 40px;
+    padding-left: 10px;
+}
