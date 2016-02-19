@@ -1,16 +1,18 @@
-body {
+body /* Main body of website */ {
+    text-align: center;
     background-color: #37474F;
     font-family: 'Oxygen', sans-serif;
+    Padding-bottom: 200px;
     }
 
-p {
+p /* Paragraph */ {
     color: white;
     font-size: 100%;
     margin-left: 40px;
     padding-left: 10px;
     }
     
-h1 {
+h1 /* Heading 1 */ {
     color: white;
     text-align: center
     font-size: 50pt;
@@ -19,49 +21,33 @@ h1 {
     
     }
 
+h1.hidden , p.hidden, h2.hidden /* Hiding elements */ {
+    display: none;
+}
+    
+a /* Link */ {
+    color: lightblue;
+    text-decoration: underline;
+    margin-left: 40px;
+    padding-left: 10px;
+    font-size: 100%;
+}
+
 .copyright-notice {
     font-size: 0.8em;
     color: white;
 }
 
-.indent {
+.indent /* White Indent */ {
     font-size: 0.8em;
     color: white;
     font-style: normal;
     border-left: 2px solid white;
-    margin-left: 40px;
+    margin-left: 10px;
     padding-left: 10px;
 }
 
-/* Navagation Stuff 
 
-nav ul {
-    list-style: none;
-}
 
-nav ul li {
-    font-family: "Oxygen" , sans-serif;
-    color: white;
-    float: left;
-    width: 10%;
-    text-align: center;
-}
 
-nav ul li ul {
-    visibility: hidden;
-    position: absolute;
-}
-
-nav ul li ul li {
-    float: none;
-    margin-left: 0px;
-    width: 100%;
-    text-align: center;
-}
-
-nav ul li:hover > ul {
-    color: white;
-    visibility:visible;
-}
-
-*/
+/* Navagation Stuff */
