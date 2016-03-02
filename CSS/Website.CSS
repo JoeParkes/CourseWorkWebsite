@@ -4,33 +4,88 @@ height: 100%;
 overflow: hidden;
 }
 
+body /* Main body of website */ {
+    background-color: #f0f0f0;
+    font-family: 'Oxygen', sans-serif;
+    Padding-bottom: 75px;
+    Padding-top: 10px;
+    }
+
 .img-circle {
     border-radius: 50%;
     width: 200px;
 	height: 200px;
 }
 
-body /* Main body of website */ {
-    
-    background-color: #2196F3;
-    font-family: 'Oxygen', sans-serif;
-    Padding-bottom: 75px;
-    Padding-top: 75px;
-    }
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+
+.imgenter {
+    margin-top:-300px;
+    display: block;
+}
+
+
 
 
 p /* Paragraph */ {
-    color: #FAFAFA;
+    color: #181818;
     font-size: 100%;
     float: center;
     }
     
+.blacktext {
+    color: Black;
+    font-size: 100%
+    float: Center;
+}
+    
+.margin {
+    margin: 100px 150px 100px 80px;
+}
+
+#box { /* rounded corners */
+    border-radius: 0px;
+    background: #FFF;
+    padding: 20px; 
+    width: 700px;
+    height: 20px;
+}
+ 
+#box2 { /* rounded corners */
+    border-radius: 0px;
+    background: #FFF;
+    padding: 20px; 
+    width: 700px;
+    height: 500px;
+    }
+    
+#box3 { /* rounded corners */
+    border-radius: 0px;
+    background: #FFF;
+    padding: 20px; 
+    width: 700px;
+    height: 1200px;
+    }
+    
+
 h1 /* Heading 1 */ {
-    color: #FAFAFA;
-    font-size: 50pt;
+    color: #181818;
+    font-size: 15pt;
     float: center;
     
     }
+    
+h1.small {
+    color: #181818;
+    font-size: 20pt;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    float: left;
+}
 
 h.hidden , p.hidden, h2.hidden /* Hiding elements */ {
     display: none;
@@ -39,7 +94,7 @@ h.hidden , p.hidden, h2.hidden /* Hiding elements */ {
 a /* Link */ {
     color: lightblue;
     font-style: normal;
-    text-decoration: underline;
+    text-decoration: none;
     float: center;
 }
 
@@ -52,25 +107,30 @@ a /* Link */ {
 
 
 
+/* Navagtion on other pages */
 
-/* Navagation Stuff */
-
-ul#list-nav {
-  margin:0px;
-  padding:0;
-  list-style:none;
-  width:500px;
+ul {
+    display: inline-block;
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
 }
 
-#list-nav li {
-    display:inline
+li {
+    float: left;
 }
 
-#list-nav li a {
- text-decoration:none;
- padding:7px ;
- width:150px;
- background:none;
- color:#FAFAFA;
- 
+li a {
+    display: inline;
+    color: #181818;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
+
+
+
+
