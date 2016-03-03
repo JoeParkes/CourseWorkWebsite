@@ -62,6 +62,14 @@ p /* Paragraph */ {
     width: 800px;
     height: 20px;
 }
+
+#boxCover { /* Menu Bar */
+    border-radius: 0px;
+    background: #f0f0f0;
+    padding: 20px; 
+    width: 800px;
+    height: 20px;
+}
  
 #box2 { /* About and Contact Page */
     border-radius: 0px;
