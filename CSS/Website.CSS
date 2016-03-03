@@ -20,6 +20,7 @@ body /* Main body of website */ {
 img.displayed {
     float: left;
     display: inline;
+    padding-right: 10px;
     margin-left: auto;
     margin-right: auto }
 
@@ -54,15 +55,15 @@ p /* Paragraph */ {
     margin: 100px 150px 100px 80px;
 }
 
-#box { /* rounded corners */
+#box { /* Menu Bar */
     border-radius: 0px;
     background: #FFF;
     padding: 20px; 
-    width: 900px;
+    width: 800px;
     height: 20px;
 }
  
-#box2 { /* rounded corners */
+#box2 { /* About and Contact Page */
     border-radius: 0px;
     background: #FFF;
     padding: 20px; 
@@ -70,11 +71,19 @@ p /* Paragraph */ {
     height: 500px;
     }
     
-#box3 { /* Top box on Home */
+#box5 { /* Update Page */
     border-radius: 0px;
     background: #FFF;
     padding: 20px; 
     width: 900px;
+    height: 300px;
+    }   
+    
+#box3 { /* Top box on Home */
+    border-radius: 0px;
+    background: #FFF;
+    padding: 20px; 
+    width: 930px;
     height: 300px;
     }
     
@@ -83,7 +92,7 @@ p /* Paragraph */ {
     border-radius: 0px;
     background: #FFF;
     padding: 20px; 
-    width: 900px;
+    width: 465px;
     height: 500px;
     }    
 
@@ -145,7 +154,4 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
-
-
 
