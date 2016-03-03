@@ -18,10 +18,15 @@ body /* Main body of website */ {
 }
 
 img.displayed {
-    display: block;
+    float: left;
+    display: inline;
     margin-left: auto;
     margin-right: auto }
 
+img.displayedcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
 
 .imgenter {
     margin-top:-300px;
@@ -32,9 +37,11 @@ img.displayed {
 
 
 p /* Paragraph */ {
+    display: Block;
+    float: center;
     color: #181818;
     font-size: 100%;
-    float: center;
+    
     }
     
 .blacktext {
@@ -51,7 +58,7 @@ p /* Paragraph */ {
     border-radius: 0px;
     background: #FFF;
     padding: 20px; 
-    width: 700px;
+    width: 900px;
     height: 20px;
 }
  
@@ -59,18 +66,26 @@ p /* Paragraph */ {
     border-radius: 0px;
     background: #FFF;
     padding: 20px; 
-    width: 700px;
+    width: 900px;
     height: 500px;
     }
     
-#box3 { /* rounded corners */
+#box3 { /* Top box on Home */
     border-radius: 0px;
     background: #FFF;
     padding: 20px; 
-    width: 700px;
-    height: 1200px;
+    width: 900px;
+    height: 300px;
     }
     
+    
+#box4 { /* Bottom box of home */
+    border-radius: 0px;
+    background: #FFF;
+    padding: 20px; 
+    width: 900px;
+    height: 500px;
+    }    
 
 h1 /* Heading 1 */ {
     color: #181818;
