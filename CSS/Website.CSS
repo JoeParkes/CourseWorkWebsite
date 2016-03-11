@@ -5,16 +5,42 @@ overflow: hidden;
 }
 
 body /* Main body of website */ {
-    background-color: #f0f0f0;
+    /* background-image: url('../Images/backgroundcolor.png'); */
+    background-position: center;
+    background-color: none; 
     font-family: 'Oxygen', sans-serif;
     Padding-bottom: 75px;
     Padding-top: 10px;
     }
+    
+#header {
+    height:60px;
+    background:white;
+    border:1px solid #CCC;
+    position: fixed;
+    top: 0px;
+    width:100%;
+    
+}
+#content {
+    width:100%;
+    height: 100%;
+    background: blue;
+    
+    
+    
+}
+
+#menubutton {
+    position:none;
+    padding-left: 5px;
+
+}
 
 .img-circle {
     border-radius: 50%;
-    width: 200px;
-	height: 200px;
+    width: 50px;
+	height: 50px;
 }
 
 img.displayed {
@@ -40,16 +66,11 @@ img.displayedcenter {
 p /* Paragraph */ {
     display: Block;
     float: center;
-    color: #181818;
+    color: #FFF;
     font-size: 100%;
     
     }
     
-.blacktext {
-    color: Black;
-    font-size: 100%
-    float: Center;
-}
     
 .margin {
     margin: 100px 150px 100px 80px;
@@ -57,7 +78,9 @@ p /* Paragraph */ {
 
 #box { /* Menu Bar */
     border-radius: 0px;
-    background: #FFF;
+    background: none;
+    border-style: solid; color: White;
+    border-width: 1px;
     padding: 20px; 
     width: 800px;
     height: 20px;
@@ -65,7 +88,9 @@ p /* Paragraph */ {
 
 #boxCover { /* Menu Bar */
     border-radius: 0px;
-    background: #f0f0f0;
+    background: none;
+    border-style: solid; color: White;
+    border-width: 1px;
     padding: 20px; 
     width: 800px;
     height: 20px;
@@ -73,46 +98,76 @@ p /* Paragraph */ {
  
 #box2 { /* About and Contact Page */
     border-radius: 0px;
-    background: #FFF;
+    background: none;
+    border-style: solid; color: White;
+    border-width: 1px;
     padding: 20px; 
     width: 900px;
     height: 500px;
     }
     
-#box5 { /* Update Page */
+#boxDisclaimer { /* Disclaimer Page */
     border-radius: 0px;
-    background: #FFF;
+    background: none;
+    border-style: solid; color: White;
+    border-width: 1px;
     padding: 20px; 
     width: 900px;
-    height: 300px;
-    }   
+    height: 150px;
+    }
+    
+  
     
 #box3 { /* Top box on Home */
-    border-radius: 0px;
-    background: #FFF;
-    padding: 20px; 
-    width: 930px;
+    position: relative;
+    background: none;
+    padding: 0px; 
+    width: 915px;
     height: 300px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
     }
     
     
 #box4 { /* Bottom box of home */
     border-radius: 0px;
-    background: #FFF;
+    background: none;
+    border-style: solid; color: White;
+    border-width: 1px;
     padding: 20px; 
     width: 465px;
     height: 500px;
-    }    
+    }  
+    
+#box5 { /* Update Page */
+    border-radius: 0px;
+    background: none;
+    border-style: solid; color: White;
+    border-width: 1px;
+    padding: 20px; 
+    width: 900px;
+    height: 300px;
+    } 
 
 h1 /* Heading 1 */ {
-    color: #181818;
+    color: #333;
     font-size: 15pt;
     float: center;
     
-    }
+}
+
+.ptext {
+    color: #333;
+    text-align: center;
+    position: relative;
+    float: right;
+    padding-right: 20px;
+    margin-top: 20px
+}
     
 h1.small {
-    color: #181818;
+    color: #FFF;
     font-size: 20pt;
     padding-left: 0px;
     padding-bottom: 0px;
@@ -141,25 +196,25 @@ a /* Link */ {
 
 /* Navagtion on other pages */
 
-ul {
-    display: inline-block;
-    list-style-type: none;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: none;
-}
 
-li {
-    float: left;
-}
 
-li a {
-    display: inline;
-    color: #181818;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
 
+
+
+
+.pic{ width: 300px; height:300px; opacity: 1; filter: alpha(opacity=100); 
+        background: url(http://www.corelangs.com/css/box/img/duck.png) no-repeat; 
+    padding: 5px:
+    padding-left: none;
+} 
+        
+        .pic:hover { opacity: 0.3; filter: alpha(opacity=30); }
+        
+        
+
+
+
+
+a.disabled {
+    pointer-events: none;
+}
