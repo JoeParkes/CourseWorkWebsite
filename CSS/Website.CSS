@@ -53,7 +53,7 @@ img.displayed {
 img.displayedcenter {
     display: block;
     margin-left: auto;
-    margin-right: auto }
+    margin-right: auto; }
 
 .imgenter {
     margin-top:-300px;
@@ -95,10 +95,17 @@ p /* Paragraph */ {
     width: 800px;
     height: 20px;
 }
+
+box2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+    float:middle;
+}
  
 #box2 { /* About and Contact Page */
     border-radius: 0px;
-    background: none;
+    background: #333;
     border-style: solid; color: White;
     border-width: 1px;
     padding: 20px; 
@@ -132,7 +139,7 @@ p /* Paragraph */ {
     
 #box4 { /* Bottom box of home */
     border-radius: 0px;
-    background: none;
+    background: #333;
     border-style: solid; color: White;
     border-width: 1px;
     padding: 20px; 
@@ -167,22 +174,19 @@ h1 /* Heading 1 */ {
 }
     
 h1.small {
-    color: #FFF;
+    color: #333;
     font-size: 20pt;
     padding-left: 0px;
     padding-bottom: 0px;
     float: left;
 }
 
-h.hidden , p.hidden, h2.hidden /* Hiding elements */ {
-    display: none;
-}
     
 a /* Link */ {
     color: lightblue;
     font-style: normal;
     text-decoration: none;
-    float: center;
+    
 }
 
 .copyright-notice {
@@ -194,7 +198,7 @@ a /* Link */ {
 
 
 
-/* Navagtion on other pages */
+
 
 
 
@@ -215,6 +219,97 @@ a /* Link */ {
 
 
 
-a.disabled {
+a.disabled { /* link disbaled */
     pointer-events: none;
+}
+
+
+
+
+
+
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  position: relative;
+  
+  border: 1px solid #333;
+  margin: 2%;
+  overflow: hidden;
+  width: 540px;
+}
+.item img {
+  max-width: 100%;
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.item:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+panel {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+
+panel-default {
+   margin-left: auto;
+    margin-right: auto; 
+    
 }
