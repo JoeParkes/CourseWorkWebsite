@@ -38,7 +38,3 @@ function checkCookie() {
 
 
 // Google
-
-
-
-
