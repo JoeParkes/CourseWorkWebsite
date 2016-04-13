@@ -39,7 +39,8 @@ body /* Main body of website */ {
 
 #circleimage {
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .img-circle {
@@ -61,7 +62,7 @@ img.displayedcenter {
     margin-right: auto; }
 
 .imgenter {
-    margin-top:-300px;
+    margin-top:-350px;
     display: block;
 }
 
@@ -188,7 +189,7 @@ h1.small {
 
     
 a /* Link */ {
-    color: lightblue;
+    color: #00c6ff;
     font-style: normal;
     text-decoration: none;
     
@@ -336,4 +337,54 @@ label {
     margin-left: auto;
     margin-right: auto;
     width: 15% ;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+
+.container {
+    margin-top:-150px;
+    
+}
+
+.container1 {
+    margin-top: -180px;
+    margin-left: 0px;
+    width: 700px;
+    position: inline;
+}
+
+.imgup{
+    margin-top: -175px;
+}
+
+.imgenter {
+    margin-top:-350px;
+    display: block;
+}
+
+#imglogo {
+    margin-top:-100px;
+    
+}
+
+#myform{
+    margin-top: -125px;
+}
+
+btn btn-primary btn1{
+    background-color: #00c6ff;
+}
+
+#block{
+    cursor: no-drop; 
+}
+
+#pointer{
+    cursor:pointer;
 }
