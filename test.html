@@ -48,9 +48,34 @@
       <li><a target="_blank", href="https://server145.web-hosting.com:2083">Admin</a></li>
       <li><a onclick="return confirm('All content on joeparkes.com is my own, please DO NOT use any content on the sitewithout contacting me beforehand.');"> Disclaimer </a></li>
       
-      
-      <li class="divider"></li>
-      <li><a href="password.html">Testing Page</a></li>   
+          <SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "blackbox1.") {
+alert('Correct Password! Welcome to Chadsmoor Junior School Website');
+window.open('home.html');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<CENTER>
+<FORM>
+<input type="button" value="Enter Site" onClick="passWord()">
+</FORM>
+</CENTER>
+
+        
    
    </ul>
    
@@ -68,50 +93,7 @@
     
     
     
-   <form action="mailto:joeparkes@hotmail.com" method="post" id="myform" enctype="text/plain"
-  name="Form Data">
-       
-       <fieldset class="form-group">
-    <label class="control-label" for="inputWarning"></label>
-    <label class="control-label" for="inputSuccess"></label>
-    <label for="name">Name</label>
-    <input type="name" name="name" class="form-control" id="Email1" placeholder="e.g Fred Blogs" required >
-    
-    
-  </fieldset>
-       
-  <fieldset class="form-group">
-    <label class="control-label" for="inputWarning"></label>
-    <label class="control-label" for="inputSuccess"></label>
-    <label for="Email1">Email Address</label>
-    <input type="email" name="email" class="form-control" id="Email1" placeholder="e.g fredblogs@hotmail.com" required >
-    <center>
-        <small class="text-muted">We'll never share your email with anyone else.</small>
-    </center>
-    
-  </fieldset>
-  <fieldset class="form-group">
-    <label for="exampleSelect1">Message Subject</label>
-    <select class="form-control" name="drop" id="exampleSelect1" required >
-      <option value="" disabled selected >Select your option</option>
-      <option>Personal Message</option>
-      <option>Website Problems</option>
-      <option>Business Enquiry</option>
-      <option>Content Form</option>
-    </select>
-  </fieldset>
   
-  <fieldset class="form-group">
-    <label for="exampleTextarea"> Message</label>
-    <textarea class="form-control" name="message" id="exampleTextarea" placeholder="Your Message" rows="3" required ></textarea>
-  </fieldset>
- 
- <center>
-  <button type="submit" name="submit" class="btn btn-primary btn1" value="send">send</button>   
- </center>
-  
-  
-</form>
 
 
 

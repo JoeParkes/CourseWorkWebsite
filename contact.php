@@ -1,3 +1,33 @@
+<?php
+
+if (isset($_POST['submit'])){
+    
+    $url = 'https://www.google.com/recaptcha/api/siteverify';
+    $privatekey = "6LemTx4TAAAAAOliRACvjrLsHODR6ACExq2Uan7F";
+    
+    $response = file-get-contents($url."?secret=".$privatekey."&response=".$_POST['g-recaptcha-response']."&remoteip=".$_SERVER['REMOTE_ADDRE']);
+    
+    $data = json_decode($response);
+    
+    if(isset($data->succses) AND $data->succses==true){
+        
+        header('Location: contact.php?CaptchaPass=True');
+        
+    }else
+    
+        header('Location: contact.php?CaptchaFail=True');
+}
+
+
+
+?>
+
+
+
+
+
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -21,6 +51,7 @@
         <script src="https://raw.githubusercontent.com/philipwalton/polyfill/master/dist/polyfill.min.js"></script>
         <script src="gen_validatorv4.js" type="text/javascript"></script>
         <script src="site.js"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
         
        
         
@@ -67,11 +98,28 @@
    <form action="MAILTO:joeparkes@hotmail.com" method="post" id="myform" enctype="multipart/form-data"
   name="Form Data">
        
+       <?php if(isset($_GET['CaptchaPass'])) ?>
+       <center><div class="FormElement" > Message Sent</div></center>
+       <?php } ?>
+      
+      <?php if(isset($_GET['CaptchaFail'])) ?> 
+       <center><div class="FormElement" > Form Failed, please try again!</div></center>
+       <?php } ?>
+       
        <fieldset class="form-group">
     <label class="control-label" for="inputWarning"></label>
     <label class="control-label" for="inputSuccess"></label>
-    <label for="name">Name</label>
-    <input type="name" name="name" class="form-control" id="name" placeholder="e.g Fred Blogs" >
+    <label for="name">Name *</label>
+    <input type="name" name="name" class="form-control" id="name" placeholder="e.g Joe Parkes" required >
+    
+    
+  </fieldset>
+  
+  <fieldset class="form-group">
+    <label class="control-label" for="inputWarning"></label>
+    <label class="control-label" for="inputSuccess"></label>
+    <label for="name">Website URL </label>
+    <input type="website" name="name" class="form-control" id="name" placeholder="e.g www.joeparkes.com"  >
     
     
   </fieldset>
@@ -80,7 +128,7 @@
     <label class="control-label" for="inputWarning"></label>
     <label class="control-label" for="inputSuccess"></label>
     <label for="email1">Email Address *</label>
-    <input type="email" name="email" class="form-control" id="email1" placeholder="e.g fredblogs@hotmail.com" required >
+    <input type="email" name="email" class="form-control" id="email1" placeholder="e.g joeparkes@hotmail.com" required >
     <center>
         <small class="text-muted">We'll never share your email with anyone else.</small>
     </center>
@@ -101,6 +149,12 @@
     <label for="exampleTextarea"> Message *</label>
     <textarea class="form-control" name="message" id="exampleTextarea" placeholder="Your Message" minlength="1" maxlength="700" rows="3" required ></textarea>
   </fieldset>
+ 
+ <center> 
+ <div class="g-recaptcha" data-sitekey="6LemTx4TAAAAABw7U-cFJXpm1A1MlF07bZj5-Wl_"></div>
+ </center>
+ 
+ <br> </br>
  
  <center>
   <button type="submit" name="submit" class="btn btn-primary btn1" value="Submit">Send</button>   
