@@ -91,18 +91,19 @@ if (isset($_POST['submit'])){
        
    </div>
     
-    
+    <br> </br>
+    <br> </br>
     
     
     
    <form action="MAILTO:joeparkes@hotmail.com" method="post" id="myform" enctype="multipart/form-data"
-  name="Form Data">
+  name="form">
        
        <fieldset class="form-group">
     <label class="control-label" for="inputWarning"></label>
     <label class="control-label" for="inputSuccess"></label>
     <label for="name">Name *</label>
-    <input type="name" name="name" class="form-control" id="name" placeholder="e.g Joe Parkes" required >
+    <input type="name" name="name" class="form-control" id="name" maxlength="100" placeholder="e.g Joe Parkes" required >
     
     
   </fieldset>
@@ -111,7 +112,7 @@ if (isset($_POST['submit'])){
     <label class="control-label" for="inputWarning"></label>
     <label class="control-label" for="inputSuccess"></label>
     <label for="name">Website URL </label>
-    <input type="website" name="name" class="form-control" id="name" placeholder="e.g www.joeparkes.com"  >
+    <input type="website" name="website" class="form-control" id="website" maxlength="30" placeholder="e.g www.yourwebsite.com"  >
     
     
   </fieldset>
@@ -120,27 +121,30 @@ if (isset($_POST['submit'])){
     <label class="control-label" for="inputWarning"></label>
     <label class="control-label" for="inputSuccess"></label>
     <label for="email1">Email Address *</label>
-    <input type="email" name="email" class="form-control" id="email1" placeholder="e.g joeparkes@hotmail.com" required >
+    <input type="email" name="email" class="form-control" id="email1" maxlength="30" placeholder="e.g joeparkes@hotmail.com" required >
     <center>
         <small class="text-muted">We'll never share your email with anyone else.</small>
     </center>
     
   </fieldset>
   <fieldset class="form-group">
+    <label class="control-label" for="inputWarning"></label>
+    <label class="control-label" for="inputSuccess"></label>
     <label for="exampleSelect1">Message Subject *</label>
-    <select class="form-control" name="drop" id="exampleSelect1" required >
+    <select class="form-control" name="drop" id="drop" required >
       <option value="" disabled selected >Select your option</option>
       <option>Personal Message</option>
       <option>Website Problems</option>
       <option>Business Enquiry</option>
-      <option>Content Form</option>
     </select>
   </fieldset>
   
   <fieldset class="form-group">
     <label for="exampleTextarea"> Message *</label>
-    <textarea class="form-control" name="message" id="exampleTextarea" placeholder="Your Message" minlength="1" maxlength="700" rows="3" required ></textarea>
+    <textarea class="form-control" name="message" id="message" placeholder="Your Message" minlength="1" maxlength="700" required ></textarea>
   </fieldset>
+ 
+ <br> </br>
  
  <center> 
  <div class="g-recaptcha" data-sitekey="6LemTx4TAAAAABw7U-cFJXpm1A1MlF07bZj5-Wl_"></div>
