@@ -86,7 +86,7 @@ if (isset($_POST['submit'])){
    
         <div>
      <a href="home.html">
-        <img src="Images/LogoFinal.png" id="imglogo" class="displayedcenter" alt="image"height="550" width="550"></a>
+        <img src="Images/LogoFinal.png" id="imglogo" class="displayedcenter" alt="image"height="400" width="400"></a>
         
        
    </div>
