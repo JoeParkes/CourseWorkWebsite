@@ -98,14 +98,6 @@ if (isset($_POST['submit'])){
    <form action="MAILTO:joeparkes@hotmail.com" method="post" id="myform" enctype="multipart/form-data"
   name="Form Data">
        
-       <?php if(isset($_GET['CaptchaPass'])) ?>
-       <center><div class="FormElement" > Message Sent</div></center>
-       <?php } ?>
-      
-      <?php if(isset($_GET['CaptchaFail'])) ?> 
-       <center><div class="FormElement" > Form Failed, please try again!</div></center>
-       <?php } ?>
-       
        <fieldset class="form-group">
     <label class="control-label" for="inputWarning"></label>
     <label class="control-label" for="inputSuccess"></label>
