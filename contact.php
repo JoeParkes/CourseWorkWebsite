@@ -91,6 +91,7 @@ if (isset($_POST['submit'])){
        <a href="index.html" class="ptext"> Joe Parkes | Portfolio </a>
    </div>
    
+   <br> </br>
         <div>
      <a href="home.html">
         <img src="Images/LogoFinal.png" id="imglogo" class="displayedcenter" alt="image"height="400" width="400"></a>
