@@ -37,14 +37,22 @@ background: linear-gradient(to left, #7474BF , #348AC7); /* W3C, IE 10+/ Edge, F
     width:100%;
     
 }
+
+.alert-info {
+  margin-top:50px;
+}
+
 #content {
     width:100%;
     height: 100%;
-    
-    
-    
-    
 }
+
+form {
+   width: 550px;
+   height: 450px;
+   margin: auto;
+   position: relative;
+ }
 
 
 #circleimage {
@@ -86,10 +94,18 @@ center.auto{
 p /* Paragraph */ {
     display: Block;
     float: center;
-    color: #FFF;
+    color: grey;
     font-size: 100%;
     
     }
+    
+p.footer {
+    color: lightgrey;
+    
+    pointer-events: none;
+    cursor: default;
+}
+
     
     
 .margin {
@@ -208,6 +224,7 @@ a /* Link */ {
     text-decoration: none;
     
 }
+
 
 .copyright-notice {
     font-size: 0.8em;
