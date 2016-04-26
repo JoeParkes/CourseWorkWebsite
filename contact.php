@@ -63,7 +63,7 @@ if (isset($_POST['submit'])){
     
     <div class="alert alert-info">
     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <center><strong>Info!</strong> The form below is not completed yet but if you would like to contact me then please click<a href="mailto:joeparkes@hotmail.com" > here </a></center>
+    <center><strong>Info!</strong> The form below is not completed yet but if you would like to contact me then please click<a href="mailto:joeparkes@hotmail.com" > here.</a> The contact form is under construction, sorry </center>
   </div>
     
 
@@ -101,7 +101,7 @@ if (isset($_POST['submit'])){
     <br> </br>
     <br> </br>
     
-    
+    <!--
     
    <form action="form.asp" method="get" id="myform" enctype="multipart/form-data"
   name="form">
@@ -151,7 +151,10 @@ if (isset($_POST['submit'])){
  <div class="g-recaptcha" data-sitekey="6LemTx4TAAAAABw7U-cFJXpm1A1MlF07bZj5-Wl_"></div>
  </center>
  
+ 
+ 
  <br> </br>
+ 
  
  <center>
   <button type="submit" name="submit" class="btn btn-primary btn1" value="Submit">Send</button>   
@@ -167,6 +170,8 @@ if (isset($_POST['submit'])){
 <br> </br> 
 <br> </br> 
 <br> </br>
+
+-->
 
 <footer>
   <center><p class="footer" id="not-active">&copy; JoeParkes. All rights Reserved. Designed by <a href="joeparkes.com" > Joe Parkes</a></p></center>
