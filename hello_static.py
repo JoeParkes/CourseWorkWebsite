@@ -28,6 +28,10 @@ def page_not_found(e):
 @app.route('/about.html')
 def nominee5():
     return render_template('about.html')
+    
+@app.route('/contact')
+def nominee6():
+    return render_template('flask_sqlite.html')
 
 
 if __name__ == '__main__':
