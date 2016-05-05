@@ -421,3 +421,45 @@ btn btn-primary btn1{
 p:hover, h1:hover, a:hover {
     color:#7474BF;
 }
+
+
+
+.container-fluid {
+    background: #EB3349; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #EB3349 , #F45C43); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #EB3349 , #F45C43); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+    height: 200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.container-fluid1 {
+
+background: #606c88; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #606c88 , #3f4c6b); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #606c88 , #3f4c6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+
+    height: 200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.h5{
+    font-size: 50px;
+    text-align: center;
+    font-family: ;
+    color: white;
+    
+}
+
+picmargin {
+    margin-top: 10px;
+    padding-top: 10px;
+}

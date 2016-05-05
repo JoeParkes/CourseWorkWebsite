@@ -85,5 +85,3 @@ function checkCookie() {
         return false;
     }
 }
-
-
