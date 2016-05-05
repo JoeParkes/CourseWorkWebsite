@@ -33,3 +33,8 @@ def nominee5():
 if __name__ == '__main__':
     Bootstrap(app)
     app.run(port=8080, host='0.0.0.0', debug=True)
+    
+    
+# if you need to activate the virtual enviroment - enter this into the bash - ". venv/bin/activate"
+
+
